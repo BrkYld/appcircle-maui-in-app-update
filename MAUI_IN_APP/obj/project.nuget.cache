@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "QCGt28ZruVM=",
+  "success": false,
+  "projectFilePath": "/Users/burakyildirim/Repository/MAUI_IN_APP/MAUI_IN_APP.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net8.0-android, net8.0-ios, net8.0-maccatalyst"
+    }
+  ]
+}
