@@ -9,6 +9,11 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+		string version = AppInfo.VersionString;
+		string build = AppInfo.BuildString;
+
+
+		WelcomeLabel.Text = $"Version: {version} (Build: {build})";
 	}
 
 	protected override async void OnAppearing()
