@@ -42,7 +42,7 @@
       <ApplicationId>io.appcircle.dashboard</ApplicationId>
     </PropertyGroup>
     <PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-      <ApplicationId>com.appcircle.sample_flutter_google_submit_app"</ApplicationId>
+      <ApplicationId>com.appcircle.sample_flutter_google_submit_app</ApplicationId>
     </PropertyGroup>
 
     <ItemGroup>
