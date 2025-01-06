@@ -20,10 +20,10 @@ public static class MauiProgram
 #endif
 
 		Environment.SetEnvironmentVariable("IOS_STORE_SECRET", "MjA5ODBjZTktNmVhOS00ODExLWE4ZDctMmE4YTZhMGJlYjY4fDZmYmQwOTRjLTE4Y2ItNGJjZC1iYzZmLWNmMmFlZTc1Mjk4Mg==");
-		Environment.SetEnvironmentVariable("ANDROID_STORE_SECRET", "NWViMWFkZjktMGE4My00OGMxLTk2NDMtZjVlMjMzZmMyNzVlfDZmYmQwOTRjLTE4Y2ItNGJjZC1iYzZmLWNmMmFlZTc1Mjk4Mg==");
-		Environment.SetEnvironmentVariable("STORE_URL", "https://sarp.store.appcircle.io");
+		Environment.SetEnvironmentVariable("ANDROID_STORE_SECRET", "ZGYyYzU3MzktODg5MC00ZTE2LWJjNGEtMWI4NTkyZGJkMDVkfDZmYmQwOTRjLTE4Y2ItNGJjZC1iYzZmLWNmMmFlZTc1Mjk4Mg==");
+		Environment.SetEnvironmentVariable("STORE_URL", "https://store.store.appcircle.io");
 		Environment.SetEnvironmentVariable("IOS_PROFILE_ID", "f2487ca0-188c-490f-9c28-ab0c41d15a3e");
-		Environment.SetEnvironmentVariable("ANDROID_PROFILE_ID", "8f5acd24-dd25-4464-b49c-655630db9f2b");
+		Environment.SetEnvironmentVariable("ANDROID_PROFILE_ID", "ef02714e-7855-4dfa-afaa-c36affa189bd");
 		return builder.Build();
 	}
 }
