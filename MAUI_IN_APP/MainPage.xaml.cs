@@ -43,7 +43,7 @@ public partial class MainPage : ContentPage
 			bool result = await DisplayAlert("Update Available",$"{updateInfo.Version} version is available.", "Update","Cancel");
 			if (result)
 			{
-				await Launcher.OpenAsync(updateInfo.DownloadUrl);
+				Launcher.OpenAsync(updateInfo.DownloadUrl);
 			}
 		}
 	}
