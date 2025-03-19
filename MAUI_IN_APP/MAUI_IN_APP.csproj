@@ -24,7 +24,7 @@
         <ApplicationTitle>MAUI_IN_APP</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.MauiApp.1</ApplicationId>
+        <ApplicationId>com.appcircle.sample_flutter_google_submit_app</ApplicationId>
 
         <!-- Versions -->
         <Version>1.0.0</Version>
