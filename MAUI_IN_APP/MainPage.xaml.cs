@@ -5,13 +5,11 @@ namespace MAUI_IN_APP;
 public partial class MainPage : ContentPage
 {
 	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
 		string version = AppInfo.VersionString;
 		string build = AppInfo.BuildString;
-
 
 		WelcomeLabel.Text = $"Version: {version} (Build: {build})";
 	}
@@ -24,13 +22,15 @@ public partial class MainPage : ContentPage
 	}
 	private async void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		try
+		{
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		}
+		catch(Exception ex)
+		{
+			//ignore
+		}
+
 	}
 
 	public async Task UpdateControl()
@@ -43,7 +43,9 @@ public partial class MainPage : ContentPage
 			bool result = await DisplayAlert("Update Available",$"{updateInfo.Version} version is available.", "Update","Cancel");
 			if (result)
 			{
-				await Launcher.OpenAsync(updateInfo.DownloadUrl);
+				var context = Android.App.Application.Context;
+				var updateHelper = new UpdateHelper(context);
+				updateHelper.StartDownload(updateInfo.DownloadUrl);
 			}
 		}
 	}
